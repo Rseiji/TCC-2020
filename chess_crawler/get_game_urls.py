@@ -22,6 +22,7 @@ base_url = 'https://gameknot.com/list_annotated.pl?u=all&c=0&sb=0&rm=0&rn=0&rx=9
 list_games = []
 
 for i in range(initial_page, final_page):
+    print("getting links of page %d ..." % i)
     url = base_url + str(i)
     driver.get(url)
 

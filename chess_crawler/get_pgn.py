@@ -9,6 +9,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
 
+
+#Faz download do jogo em .pgn
+#input = id da página, que consta na url
 def get_pgn(page_id):
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -23,28 +26,18 @@ def get_pgn(page_id):
     #carregando a página
     driver.get(pgn_url)
     
-    
-    #save_export_button = WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.XPATH, "//div[@id='anno-footer']/div[@id='anno-links']/a[3]")))
-    #acessando o texto do jogo em pgn
+    #Clicando no botão "save/export"
     save_export_button = driver.find_element_by_xpath("//div[@id='anno-footer']/div[@id='anno-links']/a[3]")
     driver.implicitly_wait(10)
     ActionChains(driver).move_to_element(save_export_button).click(save_export_button).perform()
 
-    #save_export_button.click()
-
-    #get_pgn_button = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@class='popmenu']/a[2]")))
+    #Clicando no botão "get pgn"
     get_pgn_button = driver.find_element_by_xpath("//div[@class='popmenu']/a[2]")
     driver.implicitly_wait(10)
     ActionChains(driver).move_to_element(get_pgn_button).click(get_pgn_button).perform()
-
-
-    #get_pgn_button.click()
     
-
-    #pgn_text_DOM = WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.XPATH, "//tr/td/textarea[@id='pgn_code']")))
+    #Crawleando o .pgn
     pgn_text_DOM = driver.find_element_by_xpath("//tr/td/textarea[@id='pgn_code']")
-    #driver.implicitly_wait(10)
-    #texto do pgn
     pgn_text = pgn_text_DOM.get_attribute('innerHTML')
 
     driver.quit()
@@ -53,13 +46,8 @@ def get_pgn(page_id):
 
 
 
-
-
-
-
 #urls dos jogos
 game_links = sys.argv[1]
-
 pgn_path = sys.argv[2]
 
 
@@ -70,7 +58,7 @@ f.close()
 
 game_ids = [re.findall(r'gm=(\d+)$', i)[0] for i in game_urls if re.search(r'gm=(\d+)$', i)]
 
-
+#game_id = '59540'
 for game_id in game_ids:
 
     pgn_text = get_pgn(game_id)
