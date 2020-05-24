@@ -8,6 +8,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+
 
 
 #Faz download do jogo em .pgn
@@ -17,8 +21,8 @@ def get_pgn(page_id):
     chrome_options.add_argument("--headless")
 
     #Definindo a conexão
-    driver = webdriver.Chrome(options=chrome_options)
-
+    #driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
     #url
     base_url = 'https://gameknot.com/annotate.pl?id='
     pgn_url = base_url + page_id
