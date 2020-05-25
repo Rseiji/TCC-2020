@@ -68,7 +68,7 @@ for game_id in game_ids:
     pgn_text = get_pgn(game_id)
 
     pgn_filename = pgn_path + 'pgn_' + game_id + '.txt'
-
+    print('saved' + pgn_filename)
     with open(pgn_filename, 'w') as f:
         f.write("%s" % pgn_text)
 
