@@ -1,23 +1,20 @@
 # How to use this crawler
 
-* First, you must execute `run_all.py` in `Python 2`, folder `ChessComGen_Python2`, and copy folder `saved_files` to this project's root.
+* Run `get_game_urls.py` to scrape game pages urls. It will search for these urls in the site's list of game, distributed among several pages. You must inform initial and final page numbers and also a `.txt` file to save game urls.
 
 <br>
 
-* To get the raw data, from `TCC-2020/chess_crawler` folder, you must:
-
 ```
-cd chess_crawler && scrapy crawl chess_spider -o <raw data file name>.csv
+python get_game_urls.py initial_page final_page file_game_urls.txt
 ```
 
-<br>
 
-* Now, return to `TCC-2020/chess_crawler` and run:
+* To get the raw data, you must run `get_pgn.py`, having a `.txt` file containing game urls to scrape and an output path as arguments.
 
 ```
-python3 csv_parse.py ./chess_crawler/<file generated from scrapy>.csv <formated file>.csv
+python get_pgn.py game_links.txt output_folder/ 
 ```
 
 <br>
 
-* The `.csv` output of `csv_parse.py` contains each comment associated with html page identification and associated moves.
+* As a result, all url games are stored, saved in `.pgn` files.
