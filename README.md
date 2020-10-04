@@ -1,13 +1,11 @@
-# TCC-2020
+# Application of Natural Language Processing to detect “Turning Points” in Chess matches
 
-## Natural Language Chess
+This repository contains the code implementation for the undergraduate thesis on the machine learning area carried out by Douglas Ramos, Pedro Felipe and Rafael Higa under the guidance of Prof. Dr. Glauber de Bona, from University of São Paulo 2020.
 
-### Final Paper - Bachelor Degree in Electrical Engineering - Emphasis in Computing
-#### USP - Universidade de São Paulo, 2020
+The undergraduate thesis consists of analyzing comments related to chess moves, using natural language processing to detect the occurrence of one or more **turning points** during a chess game - that is, moves or sets of moves that have a significant impact on the direction of the game, which ultimately will define who will win or lose the game.
 
+## License
 
-From: Rafael Higa, Douglas Ramos & Pedro Felipe
+Copyright © 2020 Douglas Ramos, Pedro Felipe and Rafael Higa
 
-Oriented By: Prof. Dr. Glauber de Bona
-
-
+Distributed under the MIT License, with due credit to the work on which this project was based.
