@@ -1,0 +1,376 @@
+Id, Pgn Number, Event, Move Number, Move, Score, Comment
+0, 44, "alygally's mini-tournament", 1W, e2e4, +22, "This is my first gameknot game against someone rated 1800 , in my
+very first mini-tournament.", 0
+1, 44, "alygally's mini-tournament", 1B, e7e5, +24, "", 0
+2, 44, "alygally's mini-tournament", 2W, b1c3, +29, "I've been playing the Vienna Gambit
+as white, with a lot of success, since people play exf4, which gives white
+a great position (lots of development for the pawn).", 0
+3, 44, "alygally's mini-tournament", 2B, f8c5, +37, "Minor disappointment.", 0
+4, 44, "alygally's mini-tournament", 3W, f1c4, +16, "", 0
+5, 44, "alygally's mini-tournament", 3B, g8f6, +16, "", 0
+6, 44, "alygally's mini-tournament", 4W, d2d3, -5, "", 0
+7, 44, "alygally's mini-tournament", 4B, b8c6, +19, "", 0
+8, 44, "alygally's mini-tournament", 5W, f2f4, -23, "My idea here is to expand on the kingside,
+drive the knight away, and attack with both bishops, queen, and maybe the
+rook.", 0
+9, 44, "alygally's mini-tournament", 5B, d7d6, 0, "", 0
+10, 44, "alygally's mini-tournament", 6W, f4f5, -16, "", 0
+11, 44, "alygally's mini-tournament", 6B, c6a5, +8, "", 0
+12, 44, "alygally's mini-tournament", 7W, d1f3, -29, "Maybe this isn't the greatest plan, since without
+that light-square bishop, the kingside attack isn't looking as great.", 0
+13, 44, "alygally's mini-tournament", 7B, a5c4, -19, "", 0
+14, 44, "alygally's mini-tournament", 8W, d3c4, -8, "", 0
+15, 44, "alygally's mini-tournament", 8B, c7c6, +25, "", 0
+16, 44, "alygally's mini-tournament", 9W, g2g4, +51, "Going for the kingside attack anyway!", 0
+17, 44, "alygally's mini-tournament", 9B, g7g6, +125, "", 0
+18, 44, "alygally's mini-tournament", 10W, g4g5, +114, "", 0
+19, 44, "alygally's mini-tournament", 10B, f6h5, +142, "", 0
+20, 44, "alygally's mini-tournament", 11W, g1e2, +159, "Now everything is still defended adequately, as black doesn't
+have a breakthrough for white's extended kingside.  My idea is Ng3, opening
+the h-file for attack.", 0
+21, 44, "alygally's mini-tournament", 11B, a7a6, +160, "?  Too slow, maybe.", 0
+22, 44, "alygally's mini-tournament", 12W, e2g3, +175, "", 0
+23, 44, "alygally's mini-tournament", 12B, h5g3, +202, "", 0
+24, 44, "alygally's mini-tournament", 13W, h2g3, +145, "", 0
+25, 44, "alygally's mini-tournament", 13B, b7b5, +224, "", 0
+26, 44, "alygally's mini-tournament", 14W, b2b3, 0, "Why do this?  White has doubled pawns already, do I want a second
+set?  Well, here, I think I do.  Doubled pawns can be weak in the endgame,
+but this opens a line for the other rook to attack!", 0
+27, 44, "alygally's mini-tournament", 14B, b5c4, +122, "", 0
+28, 44, "alygally's mini-tournament", 15W, b3c4, +32, "", 0
+29, 44, "alygally's mini-tournament", 15B, c5d4, +50, "Pins the knight, which is defended by the queen. BxN, QxB, PxP, PxP, BxP
+is good for black, so I defend the f5 pawn again.", 0
+30, 44, "alygally's mini-tournament", 16W, g3g4, +63, "", 0
+31, 44, "alygally's mini-tournament", 16B, d8a5, +189, "Menacing
+and pinning the knight, but this is easily met by...", 0
+32, 44, "alygally's mini-tournament", 17W, c1d2, +120, "Bd2, where
+the queen must move again in view of moves like Ne2.  Qa5 may not have
+been good, since it allowed white to develop a piece, losing a tempo for
+black.", 0
+33, 44, "alygally's mini-tournament", 17B, a5c7, +120, "", 0
+34, 44, "alygally's mini-tournament", 18W, a1b1, +137, "Grabbing the open file, and freeing the knight to
+move.", 0
+35, 44, "alygally's mini-tournament", 18B, c8b7, +193, "There is nowhere good for the bishop to go, but this works
+out poorly, as the queen is tied to the Bb7's defense.", 0
+36, 44, "alygally's mini-tournament", 19W, h1h3, +131, "Here we
+go with the plan -- double on the h-file and demolish the kingside.  Many
+responses for black look inadequate, such as f6 and 0-0.", 0
+37, 44, "alygally's mini-tournament", 19B, e8c8, +140, "This also
+works out poorly; maybe Kd2 was better?", 0
+38, 44, "alygally's mini-tournament", 20W, f3h1, +92, "The h7 pawn is a goner.", 0
+39, 44, "alygally's mini-tournament", 20B, d6d5, +194, "Black's got to counterattack to have a chance.", 0
+40, 44, "alygally's mini-tournament", 21W, h3h7, -116, "", 0
+41, 44, "alygally's mini-tournament", 21B, h8h7, -71, "", 0
+42, 44, "alygally's mini-tournament", 22W, h1h7, -99, "", 0
+43, 44, "alygally's mini-tournament", 22B, g6f5, +112, "?  This allows a combination by white.  However, if black had allowed
+fxg6, that looks unpleasant too.", 0
+44, 44, "alygally's mini-tournament", 23W, h7f5, +27, "Better than exf5 or gxf5.", 0
+45, 44, "alygally's mini-tournament", 23B, c8b8, 0, "Stepping into the pin by the rook.", 0
+46, 44, "alygally's mini-tournament", 24W, c3e2, 0, "If I can get the e5 pawn
+to take on d4, Bf4 is crushing.", 0
+47, 44, "alygally's mini-tournament", 24B, d5c4, +246, "Well, it doesn't look like there's
+anything better.", 1
+48, 44, "alygally's mini-tournament", 25W, e2d4, +152, "", 0
+49, 44, "alygally's mini-tournament", 25B, e5d4, +717, "??????  Definitely the losing move.  Bf4
+is more than black can stand.", 0
+50, 44, "alygally's mini-tournament", 26W, d2f4, +878, "", 0
+51, 44, "alygally's mini-tournament", 26B, d8d6, +755, "Now Bxd6 Qxd6 Qxf7 Qg3  gives
+black drawing chances, but there's no good response to...", 0
+52, 44, "alygally's mini-tournament", 27W, f5e5, +668, "Qe5,
+winning the rook outright, and hence the game.", 0
+53, 44, "alygally's mini-tournament", 27B, d6d7, #+7, "Hoping for Qxc7, but
+it is not to be...", 0
+54, 44, "alygally's mini-tournament", 28W, e5e8, #+6, "The Queen is lost, and black resigns.", 0
+56, 62, "League division D2", 1W, e2e4, +22, "", 0
+57, 62, "League division D2", 1B, c7c5, +20, "", 0
+58, 62, "League division D2", 2W, g1f3, +29, "", 0
+59, 62, "League division D2", 2B, d7d6, +62, "", 0
+60, 62, "League division D2", 3W, d2d4, +39, "", 0
+61, 62, "League division D2", 3B, b8c6, +130, "", 0
+62, 62, "League division D2", 4W, d4d5, +110, "I wanted to gain space in the middle.", 0
+63, 62, "League division D2", 4B, c6e5, +251, "", 0
+64, 62, "League division D2", 5W, f3e5, +215, "I exchanged Knights so it would double Black's pawns on the
+e-file.", 0
+65, 62, "League division D2", 5B, d6e5, +285, "", 0
+66, 62, "League division D2", 6W, f1b5, +155, "Analysis by Fritz 8 says that White is ahead by
+almost a full pawn here.", 0
+67, 62, "League division D2", 6B, c8d7, +220, "", 0
+68, 62, "League division D2", 7W, d1e2, +197, "", 0
+69, 62, "League division D2", 7B, a7a6, +269, "", 0
+70, 62, "League division D2", 8W, b5d7, +254, "", 0
+71, 62, "League division D2", 8B, d8d7, +260, "", 0
+72, 62, "League division D2", 9W, c2c4, +187, "I made this
+move in order to fix Black's pawns on the dark squares in order to limit
+his Bishop's mobility.", 0
+73, 62, "League division D2", 9B, g8f6, +188, "", 0
+74, 62, "League division D2", 10W, h2h3, +127, "This move was made to avoid an exchange
+on g4. I did not want to trade Queen's at this point since mine is crucial
+to holding my position together. I was focused on keeping my Pawns where
+they were. Fritz 8 says I should've made the move Nc3.", 0
+75, 62, "League division D2", 10B, b7b5, +269, "", 0
+76, 62, "League division D2", 11W, b2b3, +186, "", 0
+77, 62, "League division D2", 11B, e7e6, +219, "", 0
+78, 62, "League division D2", 12W, e1g1, +147, "", 0
+79, 62, "League division D2", 12B, f8e7, +186, "", 0
+80, 62, "League division D2", 13W, b1c3, +167, "", 0
+81, 62, "League division D2", 13B, e8g8, +220, "I expected ...b4 here. In that case, I had planned
+on trying to get the Knight to b6 via a4. I realize now that the plan was
+faulty and Fritz 8 shows it to be a weak move.", 0
+82, 62, "League division D2", 14W, f1d1, +214, "", 0
+83, 62, "League division D2", 14B, e6d5, +263, "", 0
+84, 62, "League division D2", 15W, c3d5, +226, "", 0
+85, 62, "League division D2", 15B, f6d5, +228, "", 0
+86, 62, "League division D2", 16W, d1d5, +231, "I wanted to control this d-file with my Rooks at any cost.", 0
+87, 62, "League division D2", 16B, d7e6, +279, "", 0
+88, 62, "League division D2", 17W, c1b2, +236, "I made this move to force Black into the ...f6 move which put
+another pawn on the dark-squares, thus blocking his Bishop in even more.", 0
+89, 62, "League division D2", 17B, f7f6, +212, "", 0
+90, 62, "League division D2", 18W, a1d1, +189, "Following through with putting my Rooks on the d-file.", 0
+91, 62, "League division D2", 18B, f8d8, +302, "", 0
+92, 62, "League division D2", 19W, a2a3, +131, "I realize now that this wasn't a good move. I didn't want to trade
+the Rooks by taking on d8, which is what Fritz 8 suggests.", 0
+93, 62, "League division D2", 19B, b5b4, +269, "", 0
+94, 62, "League division D2", 20W, a3a4, +244, "I
+didn't take the Pawn because I knew it would free the Black Bishop.", 0
+95, 62, "League division D2", 20B, d8d5, +247, "", 0
+96, 62, "League division D2", 21W, d1d5, +103, "", 0
+97, 62, "League division D2", 21B, a8d8, +135, "", 0
+98, 62, "League division D2", 22W, e2d3, +133, "", 0
+99, 62, "League division D2", 22B, d8d5, +138, "", 0
+100, 62, "League division D2", 23W, d3d5, +91, "", 0
+101, 62, "League division D2", 23B, g8f7, +108, "", 0
+102, 62, "League division D2", 24W, f2f3, +71, "", 0
+103, 62, "League division D2", 24B, a6a5, +175, "At this point, the draw
+was offered by Black. I was tempted to exchange Queens and knew that the
+Black King could not break through. Eventually the Pawns would be exchanged
+and the Black Bishop would be free to roam. I wasn't sure of my chances
+in the endgame so I accepted the draw.", 0
+104, 64, "Let's play chess", 1W, e2e4, +28, "", 0
+105, 64, "Let's play chess", 1B, e7e5, +33, "", 0
+106, 64, "Let's play chess", 2W, g1f3, +7, "", 0
+107, 64, "Let's play chess", 2B, b8c6, +51, "", 0
+108, 64, "Let's play chess", 3W, f1c4, +31, "", 0
+109, 64, "Let's play chess", 3B, g8f6, +24, "", 0
+110, 64, "Let's play chess", 4W, d2d3, +30, "", 0
+111, 64, "Let's play chess", 4B, d7d5, +69, "", 0
+112, 64, "Let's play chess", 5W, e4d5, +37, "", 0
+113, 64, "Let's play chess", 5B, f6d5, +73, "", 0
+114, 64, "Let's play chess", 6W, c4d5, -86, "", 0
+115, 64, "Let's play chess", 6B, f8b4, +308, "If I
+was going to take the bishop with my queen, I should have done it here,
+instead.  Really, though, I shouldn't have done it at all.", 1
+116, 64, "Let's play chess", 7W, b1c3, -115, "", 0
+117, 64, "Let's play chess", 7B, d8d5, -118, "I thought I was so clever, his knight being pinned, but my bishop was
+just too close to his pawns, I couldn't maintain, and should have seen
+that in the first place.  It was at this point I lost my queen.", 0
+118, 64, "Let's play chess", 8W, d3d4, -454, "", 1
+119, 64, "Let's play chess", 8B, e5d4, -98, "", 0
+120, 64, "Let's play chess", 9W, a2a3, -478, "", 1
+121, 64, "Let's play chess", 9B, b4a5, -162, "", 0
+122, 64, "Let's play chess", 10W, b2b4, -297, "", 0
+123, 64, "Let's play chess", 10B, a5b6, +1048, "", 0
+124, 64, "Let's play chess", 11W, c3d5, +1040, "Ok, so at this point, I freaked out,
+and instead of protecting my pieces, I, um... I dunno.", 0
+125, 64, "Let's play chess", 11B, e8g8, +1167, "", 0
+126, 64, "Let's play chess", 12W, d5b6, +1112, "", 0
+127, 64, "Let's play chess", 12B, f8e8, +1163, "This move turned out to be a crucial one, but I don't think I realized
+it at the time.  I think I was just trying to take back the rhythm of the
+game.", 0
+128, 64, "Let's play chess", 13W, e1f1, +1151, "", 0
+129, 64, "Let's play chess", 13B, c8e6, +1734, "I don't think I even realized that my rook might
+be taken.", 0
+130, 64, "Let's play chess", 14W, b6a8, +1711, "after this move (14), I saw a potential winning
+scenario, made a comment to myself on what it would be so I would remember
+it, and watched to see if he would follow what I thought he would do.
+The next four moves were exactly as I predicted.  I was way behind at this
+point, and so I don't know if I was lucky, or good.", 0
+131, 64, "Let's play chess", 14B, e6c4, +1748, "", 0
+132, 64, "Let's play chess", 15W, f1g1, +1732, "", 0
+133, 64, "Let's play chess", 15B, c4e2, +1754, "", 0
+134, 64, "Let's play chess", 16W, d1d2, +1749, "", 0
+135, 64, "Let's play chess", 16B, c6e5, +2179, "", 0
+136, 64, "Let's play chess", 17W, d2e2, +1725, "", 0
+137, 64, "Let's play chess", 17B, e5f3, +1732, "", 0
+138, 64, "Let's play chess", 18W, e2f3, #-1, "", 0
+139, 64, "Let's play chess", 18B, e8e1, #-0, "", 0
+140, 66, "easy street", 1W, e2e4, +39, "", 0
+141, 66, "easy street", 1B, e7e5, +32, "", 0
+142, 66, "easy street", 2W, g1f3, +27, "", 0
+143, 66, "easy street", 2B, g8f6, +36, "", 0
+144, 66, "easy street", 3W, b1c3, +12, "", 0
+145, 66, "easy street", 3B, f8e7, +160, "", 0
+146, 66, "easy street", 4W, f1c4, +40, "", 0
+147, 66, "easy street", 4B, c7c6, +151, "", 0
+148, 66, "easy street", 5W, f3e5, +125, "", 0
+149, 66, "easy street", 5B, d7d5, +174, "", 0
+150, 66, "easy street", 6W, e4d5, +200, "", 0
+151, 66, "easy street", 6B, f6d5, +299, "", 0
+152, 66, "easy street", 7W, d1f3, +271, "", 0
+153, 66, "easy street", 7B, c8e6, +305, "", 0
+154, 66, "easy street", 8W, d2d4, +201, "", 0
+155, 66, "easy street", 8B, b7b5, +346, "", 0
+156, 66, "easy street", 9W, c4d3, +137, "", 0
+157, 66, "easy street", 9B, a7a5, +224, "", 0
+158, 66, "easy street", 10W, d3f5, +110, "", 0
+159, 66, "easy street", 10B, e8g8, +185, "", 0
+160, 66, "easy street", 11W, c1d2, +40, "", 0
+161, 66, "easy street", 11B, a5a4, +144, "", 0
+162, 66, "easy street", 12W, a2a3, +135, "", 0
+163, 66, "easy street", 12B, b5b4, +129, "", 0
+164, 66, "easy street", 13W, c3d5, +164, "", 0
+165, 66, "easy street", 13B, e6d5, +188, "", 0
+166, 66, "easy street", 14W, f3h3, +76, "", 0
+167, 66, "easy street", 14B, g7g6, +102, "", 0
+168, 66, "easy street", 15W, d2h6, +115, "", 0
+169, 66, "easy street", 15B, f8e8, +119, "", 0
+170, 66, "easy street", 16W, h3g3, -86, "", 0
+171, 66, "easy street", 16B, e7f6, +69, "", 0
+172, 66, "easy street", 17W, e1c1, -5, "", 0
+173, 66, "easy street", 17B, a8a7, -38, "", 0
+174, 66, "easy street", 18W, e5g6, -488, "", 1
+175, 66, "easy street", 18B, f7g6, -375, "", 0
+176, 66, "easy street", 19W, f5g6, -565, "", 0
+177, 66, "easy street", 19B, e8e7, -41, "", 0
+178, 66, "easy street", 20W, g6d3, -125, "", 0
+179, 66, "easy street", 20B, g8f7, +224, "", 0
+180, 66, "easy street", 21W, g3f4, -105, "", 0
+181, 66, "easy street", 21B, e7e6, +53, "", 0
+182, 66, "easy street", 22W, d3h7, +23, "", 0
+183, 66, "easy street", 22B, f7e8, +352, "", 1
+184, 66, "easy street", 23W, h7f5, +132, "", 0
+185, 66, "easy street", 23B, e6e7, +629, "", 1
+186, 66, "easy street", 24W, f4g3, +83, "", 0
+187, 66, "easy street", 24B, b4a3, +969, "", 1
+188, 66, "easy street", 25W, g3g6, +801, "", 0
+189, 66, "easy street", 25B, d5f7, +851, "", 0
+190, 66, "easy street", 26W, g6f6, +804, "", 0
+191, 66, "easy street", 26B, f7e6, +1182, "", 0
+192, 66, "easy street", 27W, f5e6, +1208, "", 0
+193, 66, "easy street", 27B, e7e6, +1294, "", 0
+194, 66, "easy street", 28W, f6e6, +1278, "", 0
+195, 66, "easy street", 28B, a7e7, +1286, "", 0
+196, 66, "easy street", 29W, e6f6, +1009, "", 0
+197, 66, "easy street", 29B, a3a2, +1072, "", 0
+198, 66, "easy street", 30W, c1d2, +71, "", 0
+199, 66, "easy street", 30B, b8d7, #+15, "", 0
+200, 66, "easy street", 31W, f6g6, #+11, "", 0
+201, 66, "easy street", 31B, e7f7, #+11, "", 0
+202, 66, "easy street", 32W, h1e1, #+10, "The only option for Black is to trade queen and rook
+for rook. Black is not willing so he resigns. Line...  32. ... Qe7  33.
+RxQe7 KxRe7  34. Rd1  Kd8 (forced except for losing knight)  35. QxRf7
+and black is down significantly and black's best hope is an error by white
+into stalemate.", 0
+203, 70, "001 mini-tournament", 1W, e2e4, +27, "", 0
+204, 70, "001 mini-tournament", 1B, e7e6, +52, "", 0
+205, 70, "001 mini-tournament", 2W, d2d4, +45, "", 0
+206, 70, "001 mini-tournament", 2B, d7d5, +31, "", 0
+207, 70, "001 mini-tournament", 3W, b1c3, +18, "", 0
+208, 70, "001 mini-tournament", 3B, f8b4, +60, "French Defense Winawer Variation. i play
+first time.", 0
+209, 70, "001 mini-tournament", 4W, e4e5, +60, "", 0
+210, 70, "001 mini-tournament", 4B, c7c5, +61, "", 0
+211, 70, "001 mini-tournament", 5W, a2a3, +79, "", 0
+212, 70, "001 mini-tournament", 5B, b4c3, +54, "i don't know why capturing the pawn
+first ... cxd4 is not better or is it better?!", 0
+213, 70, "001 mini-tournament", 6W, b2c3, +65, "White has double
+c pawn but they are not weakness instead i think they are strong indeed,
+they make your center strong and White got b-file for his rook.", 0
+214, 70, "001 mini-tournament", 6B, g8e7, +56, "", 0
+215, 70, "001 mini-tournament", 7W, d1g4, +12, "This is the book move Nf3 is another way.", 0
+216, 70, "001 mini-tournament", 7B, d8c7, +1, "upto now everything
+went according to Book. From this position according to Book it is Qxg7
+Rg8 Qxh7 cxd4 and White cannot capture in return cxd4. See yourself Why.
+10. Ne2 Nbc6 11. f4 Bd7 12. Qd3 And White don't like this position 'cause
+White will nott get what he wanted When he played Qg4. Instead White has
+two isolated pawns actually 3 and 1 double pawn exposed king. While Black
+King is rock solid after castling Queen Side and is rook at g-file is too
+dangerous for White as White King will go to g-file after castling ...
+So simply analysing above theory abro denied book and played next move
+...", 0
+217, 70, "001 mini-tournament", 8W, c1d2, -64, "", 0
+218, 70, "001 mini-tournament", 8B, c5d4, +21, "What i do now, take the g pawn or c pawn.", 0
+219, 70, "001 mini-tournament", 9W, c3d4, -44, "so
+White don't want 'break the center'.", 0
+220, 70, "001 mini-tournament", 9B, c7c2, -1, "", 0
+221, 70, "001 mini-tournament", 10W, g4g7, -112, "", 0
+222, 70, "001 mini-tournament", 10B, h8g8, -47, "", 0
+223, 70, "001 mini-tournament", 11W, g7h6, -63, "better
+than Qf6.", 0
+224, 70, "001 mini-tournament", 11B, c2e4, +159, "", 0
+225, 70, "001 mini-tournament", 12W, h6e3, -6, "", 0
+226, 70, "001 mini-tournament", 12B, b8c6, +11, "?!", 0
+227, 70, "001 mini-tournament", 13W, e3e4, +15, "", 0
+228, 70, "001 mini-tournament", 13B, d5e4, +20, "d4 pawn is en-prise", 0
+229, 70, "001 mini-tournament", 14W, g1e2, -2, "", 0
+230, 70, "001 mini-tournament", 14B, e7f5, +42, "", 0
+231, 70, "001 mini-tournament", 15W, d2c3, -33, "", 0
+232, 70, "001 mini-tournament", 15B, e4e3, +97, "", 0
+233, 70, "001 mini-tournament", 16W, f2e3, 0, "", 0
+234, 70, "001 mini-tournament", 16B, f5e3, -21, "", 0
+235, 70, "001 mini-tournament", 17W, e1f2, -24, "as Black threatened Nc2", 0
+236, 70, "001 mini-tournament", 17B, e3d5, +75, "Jeremy Silman says ... Most Games are won by good conduct of Minor Piece", 0
+237, 70, "001 mini-tournament", 18W, a1d1, -9, "Because Knight has to leave his job of defending the d4 pawn", 0
+238, 70, "001 mini-tournament", 18B, d5c3, +136, "", 0
+239, 70, "001 mini-tournament", 19W, e2c3, +165, "do u see this knight loves to go at f6 and after this exchange
+he got one step closer automatic ...", 0
+240, 70, "001 mini-tournament", 19B, c8d7, +164, "", 0
+241, 70, "001 mini-tournament", 20W, c3e4, +107, "No one can stop this
+knight to go at f6.", 0
+242, 70, "001 mini-tournament", 20B, e8e7, +75, "instead of castling Black thought, King should
+be involved in Fighting ...", 0
+243, 70, "001 mini-tournament", 21W, e4f6, +81, "", 0
+244, 70, "001 mini-tournament", 21B, g8g7, +208, "", 0
+245, 70, "001 mini-tournament", 22W, f1d3, +215, "!! brilliant move it
+gives Black the d4 pawn but this is trap.", 0
+246, 70, "001 mini-tournament", 22B, h7h6, +312, "but Black moved the h6 pawn
+that was underattack. Did Black see the trap and not play Nxd4? Well. What
+should White should play now,  Any move can change the path of game ...", 0
+247, 70, "001 mini-tournament", 23W, h2h4, +276, "!! this move is really fantastic. main job of this move is gaurding
+the g5 square and now if u see g7 rook is trapped and it is as if Black
+plays with rook down.", 0
+248, 70, "001 mini-tournament", 23B, c6d4, +655, "?? What! Did Black didn't see the trap before?", 0
+249, 70, "001 mini-tournament", 24W, d3e4, +577, "", 0
+250, 70, "001 mini-tournament", 24B, d7c6, +627, "", 0
+251, 70, "001 mini-tournament", 25W, d1d4, +619, "", 0
+252, 70, "001 mini-tournament", 25B, c6e4, +560, "", 0
+253, 70, "001 mini-tournament", 26W, d4e4, +601, "Do you see how brilliantly Knight works
+calmly standing at f6!", 0
+254, 70, "001 mini-tournament", 26B, a8c8, +732, "Threat is Rc2  and winning the g2 pawn but
+more importantly coming back into game as Black will get two actvice rooks
+ ... so What White should do, should he stop the rook by Rhe1 and Re2 ..
+or something else ...", 0
+255, 70, "001 mini-tournament", 27W, e4d4, +695, "! wow White does not care his g2 pawn do
+u see Why. .. see it urself before seeing following calculation ...  if
+Black go for g2 pawn in next move suppose as Rc2  Kf3  black can capture
+g2 pawn with both his rooks, and capturing with any rook give Black checkmate
+himself in 2 moves. see it urself.", 0
+256, 70, "001 mini-tournament", 27B, h6h5, +840, "but Black is clever enough.  but
+what is the reasone of h5?", 0
+257, 70, "001 mini-tournament", 28W, h1d1, +854, "White double the rooks because he
+simply wants to exchange one rook with Blacks only active rook leaving
+black with one passive rook and peice down while queen side pawns of black
+are so vulnerable ...", 0
+258, 70, "001 mini-tournament", 28B, g7g6, +763, "", 0
+259, 70, "001 mini-tournament", 29W, d4d7, +778, "", 0
+260, 70, "001 mini-tournament", 29B, e7f8, +782, "", 0
+261, 70, "001 mini-tournament", 30W, d7d8, +797, "", 0
+262, 70, "001 mini-tournament", 30B, c8d8, +797, "", 0
+263, 70, "001 mini-tournament", 31W, d1d8, +825, "", 0
+264, 70, "001 mini-tournament", 31B, f8g7, +828, "if
+Ke7 then Re8#", 0
+265, 70, "001 mini-tournament", 32W, d8d7, +710, "White did not go for h5 pawn but for queen side
+pawns as a3 pawn is headache for black.", 0
+266, 70, "001 mini-tournament", 32B, g6f6, +736, "? last mistake   may be
+... Rh6 .... Rh8 was better, making White's job little difficult.", 0
+267, 70, "001 mini-tournament", 33W, e5f6, +825, "", 0
+268, 70, "001 mini-tournament", 33B, g7f6, +887, "", 0
+269, 70, "001 mini-tournament", 34W, d7b7, +894, "", 0
+270, 70, "001 mini-tournament", 34B, a7a5, +894, "", 0
+271, 70, "001 mini-tournament", 35W, b7a7, +946, "", 0
+272, 70, "001 mini-tournament", 35B, e6e5, +947, "", 0
+273, 70, "001 mini-tournament", 36W, a7a5, +1009, "", 0
+274, 70, "001 mini-tournament", 36B, f6f5, +1005, "", 0
+275, 70, "001 mini-tournament", 37W, f2f3, +1057, "! stoping king", 0
+276, 70, "001 mini-tournament", 37B, f7f6, +1094, "", 0
+277, 70, "001 mini-tournament", 38W, a5b5, +1147, "i want to know your comments about this game, please send me.
+:)", 0
