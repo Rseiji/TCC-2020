@@ -25,7 +25,7 @@ else:
 #checa se existe um arquivo contendo o primeiro id dos movimentos a serem inseridos no dataset. Caso contrário, ele é criado
 if os.path.isfile("last_id.txt"):
     last_id = open("last_id.txt")
-    move_id = int(last_id.readline()) + 1
+    move_id = int(last_id.readline())
     last_id.close()
 else:
     move_id = 0
