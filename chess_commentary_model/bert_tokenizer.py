@@ -27,7 +27,6 @@ def get_phrases_maximun_len(sentences, tokenizer, default_max_len=None):
     return max_len
 
 
-
 def tokenize_sentences(sentences, max_length, tokenizer):
     """Tokenize all of the sentences and map the tokens to their word IDs.
     """
