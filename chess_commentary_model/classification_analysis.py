@@ -12,6 +12,8 @@ from sklearn.metrics import precision_score
 
 
 def compile_results(flat_predictions, flat_true_labels, test_set):
+    """Joins test set and predicted label's results.
+    """
     result_concatenation = pd.DataFrame({'pred': flat_predictions, 'labels_tmp': flat_true_labels})
     compiled_results = pd.concat([test_set, result_concatenation], axis=1)
 

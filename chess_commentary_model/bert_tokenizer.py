@@ -9,7 +9,7 @@ import torch
 from transformers import BertTokenizer
 
 
-def get_phrases_maximun_len(sentences, tokenizer, default_max_len=None):
+def get_len_of_bigger_sentence(sentences, default_max_len=None):
     """Bert demands a default maximun phrase len to work properly.
     This lenght is measured by number of words. If the phrase is
     smaller than maximun len, the remaining blank elements are filled
@@ -20,8 +20,7 @@ def get_phrases_maximun_len(sentences, tokenizer, default_max_len=None):
 
     max_len = 0
     for sent in sentences:
-        input_ids = tokenizer.encode(sent, add_special_tokens=True)
-        max_len = max(max_len, len(input_ids))
+        max_len = max(max_len, len(sent.split(' ')))
   
     print('Max sentence length: ', max_len)
     return max_len
@@ -30,7 +29,7 @@ def get_phrases_maximun_len(sentences, tokenizer, default_max_len=None):
 def tokenize_sentences(sentences, max_length, tokenizer):
     """Tokenize all of the sentences and map the tokens to their word IDs.
     """
-    input_ids = []
+    tokenized_sentences = []
     attention_masks = []
     for sent in sentences:
         encoded_dict = tokenizer.encode_plus(
@@ -42,15 +41,15 @@ def tokenize_sentences(sentences, max_length, tokenizer):
                             return_attention_mask = True,
                             return_tensors = 'pt'
                       )
-        input_ids.append(encoded_dict['input_ids'])
+        tokenized_sentences.append(encoded_dict['input_ids'])
         attention_masks.append(encoded_dict['attention_mask'])
 
-    input_ids = torch.cat(input_ids, dim=0)
+    tokenized_sentences = torch.cat(tokenized_sentences, dim=0)
     attention_masks = torch.cat(attention_masks, dim=0)
-    return (input_ids, attention_masks)
+    return (tokenized_sentences, attention_masks)
 
 
-def make_dataset(sentences, labels, max_phrase_len=None):
+def tokenize_dataset(sentences, labels, max_phrase_len=None):
     """Makes a tuple containing encoded input phrases, its corresponding
     attention masks and maximum phrase length.
     Args:
@@ -61,13 +60,13 @@ def make_dataset(sentences, labels, max_phrase_len=None):
         tokenizer. If None, will be defined as maximum phrase lenght in
         sentences list.
     Returns:
-        input_ids(tensor): bert encoded phrases
+        tokenized_sentences(tensor): bert encoded phrases
         attention_masks(tensor): tensor containing each phrase's own
                                  attention mask
         labels(tensor): each row's label, stored as a tensor
     """
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
-    max_phrase_len = get_phrases_maximun_len(sentences, tokenizer, max_phrase_len)
-    input_ids, attention_masks = tokenize_sentences(sentences, max_phrase_len, tokenizer)
-    labels = torch.tensor(labels)
-    return (input_ids, attention_masks, labels)
+    max_phrase_len = get_len_of_bigger_sentence(sentences, max_phrase_len)
+    tokenized_sentences, attention_masks = tokenize_sentences(sentences, max_phrase_len, tokenizer)
+    labes_tensor_obj = torch.tensor(labels)
+    return (tokenized_sentences, attention_masks, labes_tensor_obj)

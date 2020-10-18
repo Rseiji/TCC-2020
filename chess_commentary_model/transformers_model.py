@@ -23,8 +23,8 @@ from transformers import get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 
 
-def cross_validation(input_ids, attention_masks, labels, cross_val_train_percentage):
-  dataset = TensorDataset(input_ids, attention_masks, labels)
+def cross_validation(tokenized_sentences, attention_masks, labels, cross_val_train_percentage):
+  dataset = TensorDataset(tokenized_sentences, attention_masks, labels)
   train_size = int(cross_val_train_percentage * len(dataset))
   val_size = len(dataset) - train_size
 
@@ -76,20 +76,13 @@ def flat_accuracy(preds, labels):
     return np.sum(pred_flat == labels_flat) / len(labels_flat)
 
 
-def format_time(elapsed):
-    """Takes a time in seconds and returns a string hh:mm:ss
-    """
-    elapsed_rounded = int(round((elapsed)))
-    return str(datetime.timedelta(seconds=elapsed_rounded))
-
-
 def train_epoch(train_dataloader, optimizer, scheduler, model, total_train_loss, device):
     for step, batch in enumerate(train_dataloader):
-        b_input_ids = batch[0].to(device)
+        b_tokenized_sentences = batch[0].to(device)
         b_input_mask = batch[1].to(device)
         b_labels = batch[2].to(device)
         model.zero_grad()
-        loss, logits = model(b_input_ids,
+        loss, logits = model(b_tokenized_sentences,
                             token_type_ids=None,
                             attention_mask=b_input_mask,
                             labels=b_labels)
@@ -98,7 +91,7 @@ def train_epoch(train_dataloader, optimizer, scheduler, model, total_train_loss,
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
         scheduler.step()
-        del b_input_ids
+        del b_tokenized_sentences
         del b_input_mask
         del b_labels
     return (optimizer, scheduler, total_train_loss)
@@ -108,11 +101,11 @@ def validate_epoch(validation_dataloader, model, device):
     total_eval_accuracy = 0
     total_eval_loss = 0
     for batch in validation_dataloader:
-        b_input_ids = batch[0].to(device)
+        b_tokenized_sentences = batch[0].to(device)
         b_input_mask = batch[1].to(device)
         b_labels = batch[2].to(device)
         with torch.no_grad():        
-            (loss, logits) = model(b_input_ids,
+            (loss, logits) = model(b_tokenized_sentences,
                                 token_type_ids=None,
                                 attention_mask=b_input_mask,
                                 labels=b_labels)
@@ -120,7 +113,7 @@ def validate_epoch(validation_dataloader, model, device):
         logits = logits.detach().cpu().numpy()
         label_ids = b_labels.to('cpu').numpy()
         total_eval_accuracy += flat_accuracy(logits, label_ids)
-        del b_input_ids
+        del b_tokenized_sentences
         del b_input_mask
         del b_labels
     return total_eval_accuracy, total_eval_loss
@@ -177,10 +170,10 @@ def classification_iterate(train_dataloader, validation_dataloader, optimizer,
     return (training_stats, model)
 
 
-def model_training(input_ids, attention_masks, labels, device, batch_size, epochs,
+def model_training(tokenized_sentences, attention_masks, labels, device, batch_size, epochs,
                    learning_rate=2e-5, epsilon=1e-8, cross_val_train_percentage=0.7):
     model = get_model(bert_model='bert-base-uncased', num_labels=2)
-    train_dataset, val_dataset = cross_validation(input_ids, attention_masks, labels,
+    train_dataset, val_dataset = cross_validation(tokenized_sentences, attention_masks, labels,
                                                   cross_val_train_percentage)
     train_dataloader, validation_dataloader = data_loader(batch_size=batch_size,
                                     train_dataset=train_dataset, val_dataset=val_dataset)
@@ -202,7 +195,7 @@ def load_test_set(df):
     sentences = df['comment'].to_list()
     labels = df['label'].to_list()
 
-    input_ids = []
+    tokenized_sentences = []
     attention_masks = []
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
     for sent in sentences:
@@ -215,16 +208,16 @@ def load_test_set(df):
                             return_tensors = 'pt',
                             truncation=True
                     )
-        input_ids.append(encoded_dict['input_ids'])
+        tokenized_sentences.append(encoded_dict['input_ids'])
         attention_masks.append(encoded_dict['attention_mask'])
 
-    input_ids = torch.cat(input_ids, dim=0)
+    tokenized_sentences = torch.cat(tokenized_sentences, dim=0)
     attention_masks = torch.cat(attention_masks, dim=0)
     labels = torch.tensor(labels)
 
     batch_size = 32  
 
-    prediction_data = TensorDataset(input_ids, attention_masks, labels)
+    prediction_data = TensorDataset(tokenized_sentences, attention_masks, labels)
     prediction_sampler = SequentialSampler(prediction_data)
     prediction_dataloader = DataLoader(prediction_data, sampler=prediction_sampler,
                                        batch_size=batch_size)
@@ -237,10 +230,10 @@ def run_model(model, prediction_dataloader, device):
 
     for batch in prediction_dataloader:
         batch = tuple(t.to(device) for t in batch)
-        b_input_ids, b_input_mask, b_labels = batch
+        b_tokenized_sentences, b_input_mask, b_labels = batch
 
         with torch.no_grad():
-            outputs = model(b_input_ids, token_type_ids=None, 
+            outputs = model(b_tokenized_sentences, token_type_ids=None, 
                             attention_mask=b_input_mask)
         logits = outputs[0]
 
