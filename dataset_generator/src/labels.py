@@ -17,6 +17,21 @@ def get_advantage(score: int) -> int:
         return Advantage.BALANCED
 
 
+def is_int(score) -> bool:
+    try:
+        int(score)
+        return True
+    except:
+        return False
+
+
+def convert_score_to_int(score) -> int:
+    try:
+        return int(score)
+    except:
+        return int(f'{score[1]}1000')
+
+
 def generate_labels(scores: list) -> list:
     ''' given a list of scores of each play on the chess game generates
     labels 0 (is not a turning point) or 1 (is a turning point) for each play
@@ -27,17 +42,14 @@ def generate_labels(scores: list) -> list:
 
     for i in range(1, len(scores)):
 
-        # there's some non numeric values on score list
-        if type(scores[i]) == int and type(scores[i-1]) == int:
-            previous_score = scores[i-1]
-            previous_advantage = get_advantage(previous_score)
-            current_score = scores[i]
-            current_advantage = get_advantage(current_score)
+        previous_score = convert_score_to_int(scores[i-1])
+        current_score = convert_score_to_int(scores[i])
 
-            if abs(current_score - previous_score) > ADVANTAGE_THRESHOLD and previous_advantage != current_advantage:
-                labels.append(1)
-            else:
-                labels.append(0)
+        previous_advantage = get_advantage(previous_score)
+        current_advantage = get_advantage(current_score)
+
+        if abs(current_score - previous_score) > ADVANTAGE_THRESHOLD and previous_advantage != current_advantage:
+            labels.append(1)
         else:
             labels.append(0)
 
