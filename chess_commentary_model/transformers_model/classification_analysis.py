@@ -1,5 +1,6 @@
 import pandas as pd
 import seaborn as sns
+import pickle
 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
@@ -59,5 +60,16 @@ def get_test_set_analysis(df):
 
 
 def save_analysis(results, conf_mat, file_name_analysis, file_name_conf_mat, path=''):
-    results.to_csv(path + file_name)
+    results.to_csv(path + file_name_analysis)
     sns.heatmap(conf_mat, annot=True).get_figure().savefig(file_name_conf_mat)
+
+
+def save_model(model, model_pickle_name):
+    with open(model_pickle_name, 'wb') as handle:
+        pickle.dump(model, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+def save_results(results, results_pickle_name):
+    with open(results_pickle_name, 'wb') as handle:
+        pickle.dump(results, handle, protocol=pickle.HIGHEST_PROTOCOL)
+

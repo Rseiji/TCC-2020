@@ -49,10 +49,11 @@ def get_data_loader(batch_size, train_dataset, val_dataset):
     return train_dataloader, validation_dataloader
 
 
-def get_adam_optimizer(model, learning_rate=2e-5, epsilon=1e-8):
+def get_adam_optimizer(model, learning_rate=2e-5, epsilon=1e-8, weight_decay=0):
   optimizer = AdamW(model.parameters(),
                   lr = learning_rate,
-                  eps = epsilon
+                  eps = epsilon,
+                  weight_decay=weight_decay
                 )
   return optimizer
 
